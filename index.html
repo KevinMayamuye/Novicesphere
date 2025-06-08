@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Green Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enhanced Centered Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon"><span>NS</span></div>
+                <span class="logo-text">NOVICESPHERE</span>
+            </a>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <!-- In your nav-links div, replace the Services link with this: -->
+                <div class="nav-link dropdown">
+                    <span>Services <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                    <div class="dropdown-content">
+                        <a href="#">APS Calculator</a>
+                        <a href="#">University Applications</a>
+                        <a href="#">Career Guidance</a>
+                        <a href="#">Student Accommodation</a>
+                    </div>
+                </div>
+                <a href="accommodation.html" class="nav-link">accommodation</a>
+                <a href="#" class="nav-link">Aps-calculator</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+                <a href="#" class="nav-link nav-cta">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your All-in-One Application Partner: University, Bursary & Accommodation</h1>
+                <p>Build a better future with us.</p>
+                <a href="#" class="btn">GET STARTED</a>
+            </div>
+            <!-- Slideshow Card - Now positioned higher -->
+            <div class="slideshow-card">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="Assets/StudentPropertiesPicture.jpg" alt="AI Technology">
+                        <div class="slide-caption">Career Workshop</div>
+                    </div>
+                    <div class="slide">
+                        <img src="Assets/PropertyConsultationPicture.jpeg" alt="Data Analytics">
+                        <div class="slide-caption">Another whatever</div>
+                    </div>
+                    <div class="slide">
+                        <img src="Assets/ServiceManagementPicture.jpeg" alt="Cloud Network">
+                        <div class="slide-caption">another whatever</div>
+                    </div>
+                    <div class="slideshow-nav">
+                        <button class="active" data-index="0"></button>
+                        <button data-index="1"></button>
+                        <button data-index="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>OUR SERVICES</h2>
+                <p>How we help you make a better future</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7Z"/>
+                            <path d="M15 17v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2M7 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+                        </svg>
+                    </div>
+                    <h3>University Applications</h3>
+                    <p>Get expert consulation to apply to universities across Africa with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2v4h4M7 14v4h4M11 6h4.5L17 7.5M3 10h4.5L7 11.5M17 22v-4h-4M21 10h-4.5L17 11.5M7 22v-4h4"/>
+                            <path d="M10 2v4H6m4 12v4H6m8-16h4.5L21 7.5"/>
+                        </svg>
+                    </div>
+                    <h3>Bursaries & funding</h3>
+                    <p>Access tailored guidance to secure bursaries and financial aid for your education.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Accommodation Support</h3>
+                    <p>Find safe, affordable, and student-friendly housing near your campus.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Career Guidance</h3>
+                    <p>Expore career paths and learnerships with personalized consultation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="1000">1000+</h3>
+                    <p>Schools</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="500">500+</h3>
+                    <p>Countries</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="240">240+</h3>
+                    <p>Accommodations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>READY TO SHAPE THE FUTURE?</h2>
+                <p>Join thousands of students who are already transforming their future with our services.</p>
+                <a href="#" class="btn">JOIN NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Solutions</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright">© 2025 NoviceSphere. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
