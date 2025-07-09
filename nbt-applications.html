@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBT Applications | NoviceSphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Enhanced Centered Navigation Bar -->
+  <header class="header">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon" style="margin-right:0;">
+                <img src="Assets/Company Logo (1).png" alt="NoviceSphere logo icon">
+            </div><span class="logo-text" style="margin-left:0;">NOVICESPHERE</span>
+        </a>
+        <div class="center-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <div class="nav-link nav-applications" id="applicationsMenuTrigger" tabindex="0">
+                Applications
+                <svg style="margin-left:6px;vertical-align:middle;" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="#1a8f4c" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <a href="accommodation.html" class="nav-link accommodation-link">Accommodation</a>
+        </div>
+        <div class="right-nav">
+            <a href="#" class="btn hero-action-btn contact-btn">Contact</a>
+        </div>
+    </div>
+  </header>
+  <!-- End Navigation Bar -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" style="text-align:left; margin-left:0;">
+        <h1 class="font-poppins">NBT Application Simplified</h1>
+        <p class="font-opensans">Select Your Date and Let Us Handle the Rest. We Apply For You</p>
+        <div class="hero-buttons">
+          <div class="cta-dropdown">
+            <button class="cta-btn" id="nbtPackageBtn">
+              Choose Your Package
+              <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="nbtPackageMenu">
+              <a href="#basic" class="dropdown-item">Basic Package</a>
+              <a href="#advanced" class="dropdown-item">Advanced Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="Assets/depositphotos_118570326-stock-photo-young-female-college-student.jpg" alt="NBT applications" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NBT Packages Section -->
+  <section id="packages" class="packages-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="font-poppins">NBT Packages</h2>
+      </div>
+      <div class="services-grid">
+        <!-- Basic Package -->
+        <div class="package-card premium">
+          <div class="package-header">
+            <h3 class="font-poppins">Basic Package</h3>
+            <div class="package-price">
+              <span class="price-amount">R70.00</span>
+              <span class="price-period">once off</span>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="font-opensans">NBT Registration only</p>
+            <p class="font-opensans">Receive Confirmation And Login Details</p>
+            <p class="font-opensans">You Handle NBT Payment (R370) Directly</p>
+          </div>
+          <div class="package-actions">
+            <a href="https://wa.me/your-number?text=Hi%2C%20I'd%20like%20to%20purchase%20the%20Success%20package" class="btn whatsapp-btn" target="_blank">Register Today– Message Us</a>
+          </div>
+        </div>
+        <!-- Advanced Package -->
+        <div class="package-card premium">
+          <div class="package-header">
+            <h3 class="font-poppins">Advanced Package</h3>
+            <div class="package-price">
+              <span class="price-amount">R450.00</span>
+              <span class="price-period">once off</span>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="font-opensans">NBT Registration</p>
+            <p class="font-opensans">NBT Payment (R370 included)</p>
+            <p class="font-opensans">Receive Login Details And Test Information</p>
+            <p class="font-opensans">Payment Proof And Registration Summary Emailed To You</p>
+            <p class="font-opensans"><em>Note: NBT fee not covered</em></p>
+          </div>
+          <div class="package-actions">
+            <a href="https://wa.me/your-number?text=Hi%2C%20I'd%20like%20to%20purchase%20the%20Success%20package" class="btn whatsapp-btn" target="_blank">Register Today – Message Us</a>
+          </div>
+        </div>
+        <div class="package-card premium">
+          <div class="package-header">
+            <h3 class="font-poppins">Exceller Package</h3>
+            <div class="package-price">
+              <span class="price-amount">R100.00</span>
+              <span class="price-period">once off</span>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="font-opensans"><strong>We Apply To:</strong> 5 Universities</p>
+            <p class="font-opensans">1 NSFAS/Bursary Application</p>
+            <p class="font-opensans">NBT Application</p>
+            <p class="font-opensans">Student Accommodation Application (You Choose)</p>
+            <p class="font-opensans">Email Monitoring</p>
+            <p class="font-opensans">Registration Assistance</p>
+            <p class="font-opensans"><em>Note: NBT fee not covered</em></p>
+          </div>
+          <div class="package-actions">
+            <a href="https://wa.me/your-number?text=Hi%2C%20I'd%20like%20to%20purchase%20the%20Success%20package" class="btn whatsapp-btn" target="_blank">Buy Now – Message Us</a>
+            <button class="btn schedule-btn">Schedule a Free Call</button>
+          </div>
+        </div>
+        <div class="package-card premium">
+          <div class="package-header">
+            <h3 class="font-poppins">Exceller Package</h3>
+            <div class="package-price">
+              <span class="price-amount">R100.00</span>
+              <span class="price-period">once off</span>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="font-opensans"><strong>We Apply To:</strong> 5 Universities</p>
+            <p class="font-opensans">1 NSFAS/Bursary Application</p>
+            <p class="font-opensans">NBT Application</p>
+            <p class="font-opensans">Student Accommodation Application (You Choose)</p>
+            <p class="font-opensans">Email Monitoring</p>
+            <p class="font-opensans">Registration Assistance</p>
+            <p class="font-opensans"><em>Note: NBT fee not covered</em></p>
+          </div>
+          <div class="package-actions">
+            <a href="https://wa.me/your-number?text=Hi%2C%20I'd%20like%20to%20purchase%20the%20Success%20package" class="btn whatsapp-btn" target="_blank">Buy Now – Message Us</a>
+            <button class="btn schedule-btn">Schedule a Free Call</button>
+          </div>
+        </div>
+        <div class="package-card premium">
+          <div class="package-header">
+            <h3 class="font-poppins">Exceller Package</h3>
+            <div class="package-price">
+              <span class="price-amount">R100.00</span>
+              <span class="price-period">once off</span>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="font-opensans"><strong>We Apply To:</strong> 5 Universities</p>
+            <p class="font-opensans">1 NSFAS/Bursary Application</p>
+            <p class="font-opensans">NBT Application</p>
+            <p class="font-opensans">Student Accommodation Application (You Choose)</p>
+            <p class="font-opensans">Email Monitoring</p>
+            <p class="font-opensans">Registration Assistance</p>
+            <p class="font-opensans"><em>Note: NBT fee not covered</em></p>
+          </div>
+          <div class="package-actions">
+            <a href="https://wa.me/your-number?text=Hi%2C%20I'd%20like%20to%20purchase%20the%20Success%20package" class="btn whatsapp-btn" target="_blank">Buy Now – Message Us</a>
+            <button class="btn schedule-btn">Schedule a Free Call</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="new-cta-section">
+    <div class="container">
+      <div class="faq-subscribe-grid">
+        <div class="faq-container">
+          <h3>FAQs</h3>
+          <div class="faq-item">
+            <button class="faq-question">What is the National Benchmark Test (NBT)?</button>
+            <div class="faq-answer">
+              <p>The NBT is a standardized test that assesses academic literacy, quantitative literacy, and mathematics skills for university readiness in South Africa. Learn more at NBT Website.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Who needs to take the NBT?</button>
+            <div class="faq-answer">
+              <p>Most universities in South Africa require students, including matriculants and mature students, to take the NBT for admission. Check requirements at NBT Website.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How do I register for the NBT?</button>
+            <div class="faq-answer">
+              <p>Registrations are made on the NBT website. Click on book a test and follow the prompts to complete the process. We'll do it for you!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What tests should I write?</button>
+            <div class="faq-answer">
+              <p>The NBT consists of two tests: Academic Literacy and Quantitative Literacy (AQL) and Mathematics (MAT). The AQL test is required for all programs, while the MAT test is required for programs that require mathematics. We can advise you!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How much does the NBT cost?</button>
+            <div class="faq-answer">
+              <p>The costs for the NBT are:<br>AQL Test: R185<br>AQL and MAT Tests: R370<br>Re-mark: R250<br>We'll guide you through payment options!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I write the NBT more than once?</button>
+            <div class="faq-answer">
+              <p>Yes, but you can only write the test twice within a cycle, and you need to pay the total fee both times. We can help plan your attempts!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How long are the NBT tests?</button>
+            <div class="faq-answer">
+              <p>Each section of the test is timed, with a total of three hours allowed for each test. We'll ensure you're prepared!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I change my test date?</button>
+            <div class="faq-answer">
+              <p>Yes, you can make changes to your test booking online until the closing date posted on the test schedule at NBT Website. We'll assist with updates!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How do I pay the National Benchmark Test fee?</button>
+            <div class="faq-answer">
+              <p>You can pay the NBT fee online via EasyPay or at an EasyPay Paypoint near you, such as Pick 'n Pay, Shoprite, Checkers, Spar. We'll guide you through the process!</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-container">
+          <h3 class="font-poppins">Need More Support?</h3>
+          <p class="font-opensans">Register for Your NBT Test Today</p>
+          <div class="support-cta">
+            <button class="btn">Schedule a Free Call</button>
+            <button class="btn">Learn How It Works</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="Assets/Company Logo (1).png" alt="NoviceSphere Full Logo">
+          </a>
+          <h4>About NoviceSphere</h4>
+          <p>NoviceSphere Is an educational consultation company that specializes in career guidance, university applications, bursary applications, National Benchmark Tests (NBT) applications, and student accommodation applications.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="university-applications.html">University Applications</a></li>
+            <li><a href="#">International Students</a></li>
+            <li><a href="bursary-applications.html">Bursary applications</a></li>
+            <li><a href="nbt-applications.html">NBT applications</a></li>
+            <li><a href="accommodation.html">Student accommodations</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h4>Socials</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4H11a5 5 0 0 0-5 5v11"></path><path d="M11 10a5 5 0 0 1 5-5v11"></path><circle cx="13.5" cy="18.5" r="2.5"></circle><circle cx="6.5" cy="6.5" r="2.5"></circle></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 NoviceSphere. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="nbt-applications.js"></script>
+</body>
+</html> 

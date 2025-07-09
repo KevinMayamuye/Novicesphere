@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance | NoviceSphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Enhanced Centered Navigation Bar -->
+  <header class="header">
+    <div class="container nav-inner">
+        <a href="index.html" class="logo">
+            <div class="logo-icon" style="margin-right:0;">
+                <img src="Assets/Company Logo (1).png" alt="NoviceSphere logo icon">
+            </div><span class="logo-text" style="margin-left:0;">NOVICESPHERE</span>
+        </a>
+        
+        <!-- Mobile menu toggle button -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="center-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <div class="nav-link nav-applications" id="applicationsMenuTrigger" tabindex="0">
+                Applications
+                <svg style="margin-left:6px;vertical-align:middle;" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="#1a8f4c" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <a href="accommodation.html" class="nav-link accommodation-link">Accommodation</a>
+        </div>
+        <div class="right-nav">
+            <a href="#" class="btn hero-action-btn contact-btn">Contact</a>
+        </div>
+    </div>
+  </header>
+  <!-- End Navigation Bar -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" style="text-align:left; margin-left:0;">
+        <h1 class="font-poppins">Unlock Your Potential With Our Expert Career Guidance At No Fee</h1>
+        <p class="font-opensans">Our Admission Counsellors will assess your results and interest to help you make a better career decision.</p>
+        <div class="hero-buttons">
+          <div class="cta-dropdown">
+            <button class="cta-btn" id="ctaBtn">
+              Schedule Your Free Session
+              <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="dropdownMenu">
+              <a href="#session" class="dropdown-item">Book Now</a>
+            </div>
+          </div>
+          <div class="cta-dropdown">
+            <button class="cta-btn" id="servicesCtaBtn">
+              Discover More Services
+              <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="servicesDropdownMenu">
+              <a href="#" class="dropdown-item">University Applications</a>
+              <a href="#" class="dropdown-item">Bursary Applications</a>
+              <a href="#" class="dropdown-item">NBT</a>
+              <a href="accommodation.html" class="dropdown-item">Student Accommodations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="Assets/depositphotos_118570326-stock-photo-young-female-college-student.jpg" alt="Teenager being advised" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="10">10+</h3>
+          <p>Years of Career Guidance Excellence</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="500">500+</h3>
+          <p>Students Guided</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="100">100</h3>
+          <p>High School Partnerships</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="95">95%</h3>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="new-cta-section">
+    <div class="container">
+      <div class="faq-subscribe-grid">
+        <div class="faq-container">
+          <h3>FAQs</h3>
+          <div class="faq-item">
+            <button class="faq-question">What Is Career Guidance?</button>
+            <div class="faq-answer">
+              <p>Career guidance is a process that helps individuals understand their strengths, interests, and values to make informed career decisions.<br>Benefits: Identify your strengths, explore career options, and create a personalized plan.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How Our Career Guidance Works</button>
+            <div class="faq-answer">
+              <ol>
+                <li>Book a session with our admission counsellor using the form</li>
+                <li>You receive a response with available time slots</li>
+                <li>You send your grade 11 or 12 June/ Final results to be reviewed for better session preparation. Applicable to university students too</li>
+                <li>You will receive meeting link</li>
+                <li>You meet the admission counsellor online to better understand and give a personalized response based on interests and results.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe-container">
+          <h3>Stay Informed. Stay Ready.</h3>
+          <p>Get the latest updates on university applications, bursaries, student housing, and more - straight to your inbox.</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Students Say About Our Career Guidance</h2>
+      </div>
+      <div class="reviews-container">
+        <div class="reviews-track">
+          <div class="review-card">
+            <div class="review-card-header">
+              <img src="https://i.pravatar.cc/100?img=5" alt="Reviewer image">
+              <div class="reviewer-info">
+                <h4>Lerato M.</h4>
+                <span>Pretoria <img src="https://flagcdn.com/za.svg" alt="South Africa flag" class="country-flag"></span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star empty">&#9733;</span>
+            </div>
+            <p class="review-body">“The career guidance session helped me discover my true interests. I'm now confident in my university choices!”</p>
+          </div>
+          <div class="review-card">
+            <div class="review-card-header">
+              <img src="https://i.pravatar.cc/100?img=6" alt="Reviewer image">
+              <div class="reviewer-info">
+                <h4>Sipho N.</h4>
+                <span>Johannesburg <img src="https://flagcdn.com/za.svg" alt="South Africa flag" class="country-flag"></span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star empty">&#9733;</span>
+            </div>
+            <p class="review-body">“I was confused about what to study, but the counsellor made everything clear. Highly recommended!”</p>
+          </div>
+          <div class="review-card">
+            <div class="review-card-header">
+              <img src="https://i.pravatar.cc/100?img=7" alt="Reviewer image">
+              <div class="reviewer-info">
+                <h4>Thandi D.</h4>
+                <span>Cape Town <img src="https://flagcdn.com/za.svg" alt="South Africa flag" class="country-flag"></span>
+              </div>
+            </div>
+            <div class="review-rating">
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star filled">&#9733;</span>
+              <span class="star empty">&#9733;</span>
+            </div>
+            <p class="review-body">“Thanks to NoviceSphere, I found a career path that matches my strengths and passions.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="new-cta-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get Started with Career Guidance Today!</h2>
+      </div>
+      <div class="cta-main-action">
+        <div class="cta-dropdown">
+          <button class="cta-btn">Schedule Your Free Session</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (copied from index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="Assets/Company Logo (1).png" alt="NoviceSphere Full Logo">
+          </a>
+          <h4>About NoviceSphere</h4>
+          <p>NoviceSphere Is an educational consultation company that specializes in career guidance, university applications, bursary applications, National Benchmark Tests (NBT) applications, and student accommodation applications.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">University Applications</a></li>
+            <li><a href="#">International Students</a></li>
+            <li><a href="#">Bursary applications</a></li>
+            <li><a href="#">NBT applications</a></li>
+            <li><a href="accommodation.html">Student accommodations</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h4>Socials</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4H11a5 5 0 0 0-5 5v11"></path><path d="M11 10a5 5 0 0 1 5-5v11"></path><circle cx="13.5" cy="18.5" r="2.5"></circle><circle cx="6.5" cy="6.5" r="2.5"></circle></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 NoviceSphere. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

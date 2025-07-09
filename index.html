@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoviceSphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Enhanced Centered Navigation Bar -->
+    <header class="header">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon" style="margin-right:0;">
+                    <img src="Assets/Company Logo (1).png" alt="NoviceSphere logo icon">
+                </div><span class="logo-text" style="margin-left:0;">NOVICESPHERE</span>
+            </a>
+            
+            <!-- Mobile menu toggle button -->
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="center-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <div class="nav-link nav-applications" id="applicationsMenuTrigger" tabindex="0">
+                    Applications
+                    <svg style="margin-left:6px;vertical-align:middle;" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L13 1" stroke="#1a8f4c" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <a href="accommodation.html" class="nav-link accommodation-link">Accommodation</a>
+            </div>
+            <div class="right-nav">
+                <a href="#" class="btn hero-action-btn contact-btn">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Applications Subheader (hidden by default) -->
+    <div class="applications-subheader" id="applicationsSubheader">
+        <div class="container applications-subheader-inner">
+            <a href="university-applications.html" class="subheader-link">University Applications</a>
+            <a href="bursary-applications.html" class="subheader-link">Bursary Applications</a>
+            <a href="nbt-applications.html" class="subheader-link">NBT Applications</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position:relative;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tertiary Applications Simplified</h1>
+                <p>We guide you to the right career path, then apply to universities, bursaries, National Benchmark test and accommodation for you.</p>
+                <!-- Replace the existing hero buttons with this -->
+                <div class="hero-buttons">
+                    <div class="cta-dropdown">
+                        <button class="cta-btn" id="ctaBtn">
+                            Start Your Journey Now
+                            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="#" class="dropdown-item">Career Guidance</a>
+                            <a href="#" class="dropdown-item">University Applications</a>
+                            <a href="#" class="dropdown-item">Bursary Applications</a>
+                            <a href="#" class="dropdown-item">NBT Applications</a>
+                            <a href="accommodation.html" class="dropdown-item">Student Accommodation</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn" style="font-family: 'Poppins', sans-serif;">Connect with Us Now</a>
+                </div>
+            </div>
+            <!-- Hero Image - Replaced slideshow -->
+            <div class="hero-image-container">
+                <img src="Assets/1.png" alt="Student Properties" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- University Logo Belt -->
+    <div class="logo-belt-container">
+        <div class="logo-track">
+            <img src="Assets/uct-logo.svg" alt="University of Cape Town logo">
+            <img src="Assets/wits-logo.svg" alt="Wits University logo">
+            <img src="Assets/stellenbosch-logo.svg" alt="Stellenbosch University logo">
+            <img src="Assets/up-logo.svg" alt="University of Pretoria logo">
+            <img src="Assets/uj-logo.svg" alt="University of Johannesburg logo">
+            <img src="Assets/rhodes-logo.svg" alt="Rhodes University logo">
+            <img src="Assets/ukzn-logo.svg" alt="UKZN logo">
+            <!-- Duplicated for seamless scroll -->
+            <img src="Assets/uct-logo.svg" alt="University of Cape Town logo">
+            <img src="Assets/wits-logo.svg" alt="Wits University logo">
+            <img src="Assets/stellenbosch-logo.svg" alt="Stellenbosch University logo">
+            <img src="Assets/up-logo.svg" alt="University of Pretoria logo">
+            <img src="Assets/uj-logo.svg" alt="University of Johannesburg logo">
+            <img src="Assets/rhodes-logo.svg" alt="Rhodes University logo">
+            <img src="Assets/ukzn-logo.svg" alt="UKZN logo">
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="100">100</h3>
+                    <p>High School Partnerships</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="500">500+</h3>
+                    <p>Applications as of 2025</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="90">90+</h3>
+                    <p>Accommodations</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="5">5+</h3>
+                    <p>Years of Application Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="swoosh-background"></div>
+        <div class="container">
+            <div class="how-it-works-grid">
+                <div class="how-it-works-image">
+                    <img src="Assets/brice-cooper-Qc7BB9E0lMc-unsplash.jpg" alt="Student looking at prospectus">
+                    <div class="image-text-overlay">
+                        <h3>Not Sure What to Study Yet?</h3>
+                        <p>Start with a free career guidance session. We'll help you figure it out before we apply for anything.</p>
+                    </div>
+                </div>
+
+                <div class="how-it-works-info">
+                    <h2>How It Works</h2>
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Choose Your Service Package</h3>
+                                <p>Decide whether you want to apply to universities, bursaries, NBTs, or for student accommodation.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Fill Out a Simple Form</h3>
+                                <p>We'll collect the key info - your documents, results, and preferences.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>We Do the Applications for You</h3>
+                                <p>You relax while our team applies on your behalf to your selected or guided choices.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Receive Your Info Pack</h3>
+                                <p>We send you login details, institution names, and courses applied to.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Track & Wait for Offers</h3>
+                                <p>We keep you informed, but you'll need to regularly check your emails and application portals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-cta-container">
+                        <div class="career-cta-dropdown">
+                            <button class="career-cta-btn" id="careerCtaBtn">
+                                Discover Our Services
+                                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <div class="career-dropdown-menu" id="careerDropdownMenu">
+                                <a href="#" class="dropdown-item">Career Guidance</a>
+                                <a href="#" class="dropdown-item">University Applications</a>
+                                <a href="#" class="dropdown-item">Bursary Applications</a>
+                                <a href="#" class="dropdown-item">NBT Applications</a>
+                                <a href="accommodation.html" class="dropdown-item">Student Accommodation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="our-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything you need to successfully transition to University</h2>
+                <p>Our Services</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service Card 1: Career Guidance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="5" y1="12" x2="2" y2="12"></line><line x1="22" y1="12" x2="19" y2="12"></line><line x1="19.07" y1="4.93" x2="17" y2="7"></line><line x1="7" y1="17" x2="4.93" y2="19.07"></line><line x1="19.07" y1="19.07" x2="17" y2="17"></line><line x1="7" y1="7" x2="4.93" y2="4.93"></line></svg>
+                    </div>
+                    <h3>Career Guidance</h3>
+                    <a href="#" class="service-cta">Learn more</a>
+                </div>
+                <!-- Service Card 2: University Applications -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h3>University Applications</h3>
+                    <a href="#" class="service-cta">Learn more</a>
+                </div>
+                <!-- Service Card 3: Bursary Applications -->
+                <div class="service-card">
+                    <div class="service-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 17 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <h3>Bursary Applications</h3>
+                    <a href="#" class="service-cta">Learn more</a>
+                </div>
+                <!-- Service Card 4: NBT Applications -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3>NBT Applications</h3>
+                    <a href="#" class="service-cta">Learn more</a>
+                </div>
+                <!-- Service Card 5: Student Accommodation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3>Student Accommodation</h3>
+                    <a href="#" class="service-cta">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Reviews</p>
+            </div>
+        </div>
+        
+        <div class="reviews-container">
+            <div class="reviews-track" id="reviewsTrack">
+                <!-- Example Review Card -->
+                <div class="review-card">
+                    <div class="review-card-header">
+                        <img src="Assets/transparent-background-psd-young-african-student-smiling-with-backpack-his-back-camera_1052902-12155.jpg" alt="Reviewer image">
+                        <div class="reviewer-info">
+                            <h4>Thando Nkosi</h4>
+                            <span>University of Cape Town <img src="https://flagcdn.com/za.svg" alt="South Africa flag" class="country-flag"></span>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                    </div>
+                    <p class="review-body">"NoviceSphere made the impossible possible. I got into my dream course thanks to their expert guidance. Highly recommended!"</p>
+                </div>
+                <!-- Add more placeholder cards -->
+                <div class="review-card">
+                     <div class="review-card-header">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Reviewer image">
+                        <div class="reviewer-info">
+                            <h4>Emily Williams</h4>
+                            <span>Stellenbosch University <img src="https://flagcdn.com/za.svg" alt="South Africa flag" class="country-flag"></span>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star empty">&#9733;</span>
+                    </div>
+                    <p class="review-body">"The bursary application process was so stressful, but they handled everything perfectly. I'm now studying debt-free!"</p>
+                </div>
+                <div class="review-card">
+                     <div class="review-card-header">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Reviewer image">
+                        <div class="reviewer-info">
+                            <h4>Johnathan Mensah</h4>
+                            <span>Wits University <img src="https://flagcdn.com/gh.svg" alt="Ghana flag" class="country-flag"></span>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                        <span class="star filled">&#9733;</span>
+                    </div>
+                    <p class="review-body">"As an international student, I was lost. Their accommodation support found me a safe and affordable place near campus."</p>
+                </div>
+                <!-- ... more cards ... -->
+            </div>
+        </div>
+        
+        <div class="review-actions">
+            <button class="add-review-btn" id="addReviewBtn">Add Your Review</button>
+            <a href="#" class="service-cta">Read More Reviews</a>
+        </div>
+    </section>
+
+    <!-- Tour Section -->
+    <section class="tour-section">
+        <div class="container">
+            <div class="tour-card">
+                <div class="tour-image-container">
+                    <img src="Assets/depositphotos_118570326-stock-photo-young-female-college-student.jpg" alt="NoviceSphere high school tour session">
+                </div>
+                <div class="tour-content">
+                    <div class="tour-info">
+                        <h3>Our 2024 High School Tour</h3>
+                        <p>In 2024, NoviceSphere proudly visited 100 high schools across Mpumalanga - empowering thousands of learners with career guidance, university and bursary insights, and real opportunities.</p>
+                    </div>
+                    <div class="tour-partner-cta">
+                        <h4>Join our 2026 tour</h4>
+                        <p>In 2026, we're hitting the road again — this time with 50 high-impact school visits planned.</p>
+                        <a href="#" class="btn">Become a Partner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Review Modal -->
+    <div class="review-modal" id="reviewModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+            <h2>Share Your Experience</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="reviewerName">Your Name</label>
+                    <input type="text" id="reviewerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewerSchool">University/School</label>
+                    <input type="text" id="reviewerSchool" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewerCountry">Country Code (e.g., za)</label>
+                    <input type="text" id="reviewerCountry" placeholder="za" required>
+                </div>
+                 <div class="form-group">
+                    <label for="reviewerImage">Your Picture</label>
+                    <input type="file" id="reviewerImage" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Your Rating</label>
+                    <div class="star-rating-input" id="starRatingInput">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="ratingValue" name="rating" value="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewerText">Your Review</label>
+                    <textarea id="reviewerText" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="service-cta">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- New CTA Section -->
+    <section class="new-cta-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>READY TO ADVANCE TO UNIVERSITY OR SWITCH COURSES IN 2026?</h2>
+                <p>Whether you're applying for the first time or changing courses, we'll help you figure it all out.</p>
+            </div>
+            
+            <div class="cta-main-action">
+                <div class="cta-dropdown">
+                    <button class="cta-btn" id="finalCtaBtn">
+                        Begin Your Path Now
+                        <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="dropdown-menu" id="finalDropdownMenu">
+                        <a href="#" class="dropdown-item">Career Guidance</a>
+                        <a href="#" class="dropdown-item">University Applications</a>
+                        <a href="#" class="dropdown-item">Bursary Applications</a>
+                        <a href="#" class="dropdown-item">NBT Applications</a>
+                        <a href="accommodation.html" class="dropdown-item">Student Accommodation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-subscribe-grid">
+                <div class="faq-container">
+                    <h3>FAQs</h3>
+                    <div class="faq-item">
+                        <button class="faq-question">What services do you offer?</button>
+                        <div class="faq-answer"><p>We offer a comprehensive range of services including career guidance, university applications, bursary applications, NBT test bookings, and student accommodation sourcing.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Who is this service for?</button>
+                        <div class="faq-answer"><p>Our services are for high school learners planning for university, students looking to change courses or institutions, and anyone needing guidance on their tertiary education journey in South Africa.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How does the application process work?</button>
+                        <div class="faq-answer"><p>You simply choose your package, fill out our form with your details and documents, and our expert team handles all the applications on your behalf. We keep you updated every step of the way.</p></div>
+                    </div>
+                </div>
+
+                <div class="subscribe-container">
+                    <h3>Stay Informed. Stay Ready.</h3>
+                    <p>Get the latest updates on university applications, bursaries, student housing, and more - straight to your inbox.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <img src="Assets/Company Logo (1).png" alt="NoviceSphere Full Logo">
+                    </a>
+                    <h4>About NoviceSphere</h4>
+                    <p>NoviceSphere Is an educational consultation company that specializes in career guidance, university applications, bursary applications, National Benchmark Tests (NBT) applications, and student accommodation applications.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="university-applications.html">University Applications</a></li>
+                        <li><a href="#">International Students</a></li>
+                        <li><a href="bursary-applications.html">Bursary applications</a></li>
+                        <li><a href="nbt-applications.html">NBT applications</a></li>
+                        <li><a href="accommodation.html">Student accommodations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-socials">
+                    <h4>Socials</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        <a href="#" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4H11a5 5 0 0 0-5 5v11"></path><path d="M11 10a5 5 0 0 1 5-5v11"></path><circle cx="13.5" cy="18.5" r="2.5"></circle><circle cx="6.5" cy="6.5" r="2.5"></circle></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NoviceSphere. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
